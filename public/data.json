@@ -1,0 +1,48 @@
+[
+    {
+        "nombre":"PRENSA FRANCESA EXCLUSIVA",
+        "price":3000,
+        "stock": 2,
+        "id":0,
+        "description":"Prensa francesa intervenida por artistas callejeros regionales. Su capacidad es de 150ml",
+       "img":"./foto1.png",
+       "category": "PRENSA DE CAFE"
+    }, 
+    
+    {
+    
+        "nombre":"2 SOBRES DE CAFÉ ÓRGANICO",
+        "price":1500,
+        "stock": 4,
+        "id":1,
+        "description":"2 Sobres de café órganico sin conservantes. Contiene 400g cada sobre ",
+        "img": "./foto2.png",
+        "category": "SOBRE DE CAFE"
+        
+    
+    
+    
+    },
+    {
+        "nombre":"BOX MOCA COLOMBIANO",
+        "price":5000,
+        "stock": 3,
+        "id":2,
+        "img": ""
+    
+    
+    },
+    
+    {
+        "nombre":"TAZA DOBLE FONDO ESPECIAL",
+        "price":3200,
+        "stock": 5,
+        "id":3,
+        "img": ""
+    
+    
+    }
+    
+    
+        
+        ]

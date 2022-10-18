@@ -8,6 +8,7 @@ import CartWidge from './CartWidge/CartWidge';
 
 
 
+
 function Navbar() {
   return (
 
@@ -22,6 +23,7 @@ function Navbar() {
             
              <a className="linkbar" href="Registrate.html">INICIAR SESIÓN</a>
               <CartWidge/>
+            
            
              
             
