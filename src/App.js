@@ -67,7 +67,7 @@ function App () {
 
 
 <Routes>
-<Route path = "/"/>
+<Route path = "/" element = {<ItemListContainer greeting={'Bienvenidos'} mensaje ={ 'amantes del cafe'}/>}/>
 <Route path ="/categoria/:id" element = {<ItemListContainer greeting={'Bienvenidos'} mensaje ={ 'amantes del cafe'}/>}/>
 <Route path ="/producto/:id" element= {<ItemDetailContainer/>}/>
 <Route path ="/shop" element= {<Cart/>}/>

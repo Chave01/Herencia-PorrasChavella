@@ -48,7 +48,7 @@ const URL_CATEGORIA =` https://fakestoreapi.com/products/category/${id}`
     return(
      <div style = {styles.container}>
      {productos.map((e) =>
-      <ItemList title = {e.title} id = {e.id} image = {e.image}
+      <ItemList title = {e.title} price = {e.price}  id = {e.id} image = {e.image}
       /> )
 
      }
@@ -69,7 +69,7 @@ const styles = {
   container:{
     marginTop:"400px",
     width:"100%",
-    height: "2000px",
+
     display:"flex",
 flexDirection: "row",
 justifyContent: "space-around",

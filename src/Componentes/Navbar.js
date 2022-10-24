@@ -3,7 +3,7 @@
 import React from 'react';
 import './Navbar.css';
 import CartWidge from './CartWidge/CartWidge';
-import logo from '../Componentes/img/logo.png';
+import logo from '../Componentes/img/logoNew.png';
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -32,10 +32,10 @@ const Navbar = () => {
 
      <img clasname = "logo" src = {logo} alt="" />
      </Link>
-     <h1>Bienvenidos amantes del Cafe</h1>
+     
 
      <nav>
-
+     
      {catergorias.map ((categoria) => {
 
        return <NavLink key = {categoria.id} to= {categoria.ruta} > {categoria.name} </NavLink>

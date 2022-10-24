@@ -11,11 +11,13 @@ export const ItemDetail = ({productos}) =>{
 
   return (
 
-    <div className='coffeeCard'>
-      
-       <div> {productos.title} </div>
+    <div className='containerdetalle'>
+          <h1>Detalle del producto</h1>
+       <div className='titledetalle'> {productos.title} </div>
         <div> {productos.id} </div>
-        <img src= {productos.image} />
+        <div>$ {productos.price}</div>
+        <div> {productos.description}</div>
+        <img clasname = "imgproducto" src= {productos.image} />
         <ItemCount stock={8} initial={1} onAdd= {onAdd}></ItemCount>
       
     </div>

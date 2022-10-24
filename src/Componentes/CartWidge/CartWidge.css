@@ -1,5 +1,5 @@
 .Cart {
-
+    margin-top: 10px;
     width: 40px;
     height: 30px;
     
@@ -8,4 +8,6 @@
     }
     .CajaCarrito img:hover{
     filter: invert(39%) sepia(42%) saturate(2426%) hue-rotate(347deg) brightness(96%) contrast(100%);
+ 
     }
+   
