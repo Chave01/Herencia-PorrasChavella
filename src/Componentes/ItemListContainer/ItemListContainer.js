@@ -1,7 +1,8 @@
 
+
 import './ItemListContainer.css';
 import React , { useEffect,useState} from 'react';
-import { ItemCount } from '../ItemCount/ItemCount';
+import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
 
 
@@ -11,30 +12,37 @@ import ItemList from '../ItemList/ItemList';
 
 export const ItemListContainer =() => {
 
-
   const [productos, setCoffeeFetch] = useState ([])
- const [loading, setLoading] = useState (true)
-
-
-  useEffect (() => {
-
-    const baseURL = 'https://api.sampleapis.com/coffee/hot';
-fetch(baseURL)
-  .then(resp => resp.json())
-  .then(data => setCoffeeFetch(data))
-  
-    .catch ((error) => {
-      console.log(error);
+  const [loading, setLoading] = useState (true)
    
+const {id} = useParams ();
 
-    })
+const URL_BASE = 'https://fakestoreapi.com/products'
+const URL_CATEGORIA =` https://fakestoreapi.com/products/category/${id}`
+   
+   useEffect (() => {
+   
+     const getItem = async () => {
+   
+  try {
+   
+   const res = await fetch (URL_CATEGORIA);
+   const data = await res.json ();
 
-  
-    .finally(setLoading (false));
-
-  }, []);
-
-
+   
+   
+  setCoffeeFetch (data);
+     }
+     catch {
+       console.log("error");
+   
+     }finally {
+       setLoading("false");
+     }
+   };
+   getItem ();
+  },[]);
+   
   
 
     return(
@@ -44,6 +52,7 @@ fetch(baseURL)
       /> )
 
      }
+     
         
 
 
@@ -71,3 +80,13 @@ border: "1px solid yellow",
 }
 
       export default ItemListContainer;
+
+
+
+
+
+
+
+
+
+

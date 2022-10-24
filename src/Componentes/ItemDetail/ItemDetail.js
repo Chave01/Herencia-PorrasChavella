@@ -1,5 +1,5 @@
-
-import './ItemList.css'
+import React from 'react'
+import './ItemDetail.css'
 import { ItemCount } from '../ItemCount/ItemCount'
 
 
@@ -7,15 +7,15 @@ const onAdd = (count) =>{
     console.log(`Agregaste ${count} al carrito`)
   }
   
-export const ItemDetail = ({props}) =>{
+export const ItemDetail = ({productos}) =>{
 
   return (
 
     <div className='coffeeCard'>
       
-       <div> {props.title} </div>
-        <div> {props.id} </div>
-        <img src= {props.image} />
+       <div> {productos.title} </div>
+        <div> {productos.id} </div>
+        <img src= {productos.image} />
         <ItemCount stock={8} initial={1} onAdd= {onAdd}></ItemCount>
       
     </div>
@@ -24,4 +24,4 @@ export const ItemDetail = ({props}) =>{
   )
 }
 
-export default ItemList;
+export default ItemDetail;

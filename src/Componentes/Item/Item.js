@@ -1,3 +1,27 @@
+import React from "react";
+
+
+
+
+const Item = ({productos}) => {
+
+
+return (
+
+<div className='coffeeCard'>
+        <div> {productos.title} </div>
+        <div> {productos.id} </div>
+        <img src={productos.image} />
+        </div>
+
+)
+
+
+}
+
+export default Item;
+
+/*
 import './Item.css';
 import { ItemCount } from '../ItemCount/ItemCount';
 
@@ -27,4 +51,5 @@ import { ItemCount } from '../ItemCount/ItemCount';
       )
     }
     
-    export default ItemList;
+    export default Item;
+    */
